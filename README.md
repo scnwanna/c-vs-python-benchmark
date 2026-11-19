@@ -65,6 +65,22 @@ The measured execution times are saved in `results/benchmark_results.csv`.
 
 All implementations should produce the same result: **9,592 prime numbers**.
 
+Each implementation was measured five times.
+
+| Implementation | Average Time (seconds) | Median Time (seconds) |
+|---|---:|---:|
+| C -O0 | 0.016353 | 0.015598 |
+| C -O2 | 0.014353 | 0.013812 |
+| Python | 0.172517 | 0.175819 |
+
+Key Findings
+
+- C -O0 was approximately 10.55 times faster than Python.
+- C -O2 was approximately 12.02 times faster than Python.
+- Compiler optimization reduced C's average execution time by approximately 12.2%.
+
+These results suggest that C executed this particular prime-counting task faster than Python on the tested environment.
+
 Tools and Technologies
 
 - C
